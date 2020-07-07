@@ -28,7 +28,9 @@ package Infy;
 	import org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDNamedDestination;
 	import org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination;
 	import org.apache.pdfbox.text.PDFTextStripper;
-	import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 
 
@@ -38,8 +40,10 @@ package Infy;
 		
 		
 
-		public static void main(String[] s) throws IOException
-		{
+
+		
+			public static void main(String[]args) throws IOException
+			{
 			
 			/*File file=new File("C:\Users\LENOVO\OneDrive\Desktop\Infosys Assesment.pdf");
 	FileInputStream fis1=new FileInputStream(file);
@@ -67,7 +71,7 @@ package Infy;
 	                        PDAnnotationLink link = (PDAnnotationLink) annot;
 	                        // get link action include link url and internal link
 	                        PDAction action = link.getAction();
-	                        // get link internal some case specal
+	                        // get link internal some case special
 	                        PDDestination pDestination = link.getDestination();
 
 	                        if (action != null) {
