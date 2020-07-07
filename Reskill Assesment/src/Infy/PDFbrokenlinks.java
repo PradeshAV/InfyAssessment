@@ -42,7 +42,8 @@ import org.testng.annotations.Test;
 
 
 		
-			public static void main(String[]args) throws IOException
+			@Test
+			public void assignment() throws IOException
 			{
 			
 			/*File file=new File("C:\Users\LENOVO\OneDrive\Desktop\Infosys Assesment.pdf");
